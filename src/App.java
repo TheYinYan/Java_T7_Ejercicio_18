@@ -33,13 +33,13 @@ public class App {
         int max = 0;
         for (int i = 0; i < aux.length; i++) {
             if (i % 2 == 0) {
-                if (min < nMin) {
+                if (nMin > min) {
                     aux[i] = posicionMin[min++];
                 } else {
                     aux[i] = posicionMax[max++];
                 }
             } else {
-                if (max < nMax) {
+                if (nMax > max) {
                     aux[i] = posicionMax[max++];
                 } else {
                     aux[i] = posicionMin[min++];
