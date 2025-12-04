@@ -3,6 +3,8 @@ import Funciones.Array;
 public class App {
     public static void main(String[] args) throws Exception {
         int[] num = Array.crearArray(10);
+        System.out.println();
+        System.out.println("Array original");
         Array.pintarArray(num);
 
         int nMax = Array.nMax(num);
